@@ -1,0 +1,9 @@
+CodRecurso;Recurso;BaseDeActividad
+AF002;Depreciación Edificio;Área
+AF003;Depreciación Vehículos;ValorActivos
+AF004;Depreciación Vehículos;ValorActivos
+AF017;Depreciación ERP;ValorActivos
+AF018;Depreciación Proyector;Personas
+OI001;Acueducto;PromedioConsumoAguaEnM3
+OI002;Energía;PromedioConsumoEnergíaEnKW/h
+OI003;Internet;Personas
