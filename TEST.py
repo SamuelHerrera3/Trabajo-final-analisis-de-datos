@@ -7,7 +7,7 @@ import os
 import csv
 
 #se setean las rutas
-RAIZ = 'C:/Dev/test/DATA'
+RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
 RutaDatosLimpios = '/Cleansed/'
 rutas = {
         'ActFijos': '/Landing/ActFijos.csv',
