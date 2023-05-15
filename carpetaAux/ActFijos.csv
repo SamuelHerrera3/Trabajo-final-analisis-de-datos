@@ -1,0 +1,28 @@
+Código,Referencia,Ubicación,Cantidad,ValorEnLibrosUnitario,VidaÚtil,VidaEconómica,MétodoDepreciación,ValorSalvamento
+AF001,Terreno,Indirecto,1, 859.400.000 ,0,0,No se deprecia,0
+AF002,Edificio,Indirecto,1, 635.000.000 ,45,50,Linea recta,0
+AF003,Camion de compras,10901,1, 250.000.000 ,10,20,Linea recta,0
+AF003,Camion de compras,Indirecto,1, 250.000.000 ,10,20,Linea recta,0
+AF004,Camion de distribucion,Indirecto,5, 115.000.000 ,10,20,Linea recta,0
+AF005,Maquina de lavado,10101,2, 30.250.000 ,10,15,Linea recta,0
+AF006,Despulpadora 230 Litros,10101,2, 57.300.000 ,10,15,Reduccion de saldos, 5.730.000 
+AF007,Despulpadora 500 Litros,10101,3, 127.700.000 ,10,15,Reduccion de saldos, 6.385.000 
+AF008,Secadora,10101,2, 45.200.000 ,10,15,Linea recta,0
+AF009,Silos de coccion,10103,3, 90.000.000 ,10,10,Linea recta,0
+AF010,Moldes,10104,10000, 30.500 ,3,3,Reduccion de saldos, 1.525 
+AF011,Computador ASUS A9654,10701,2, 4.575.000 ,5,7,Linea recta,0
+AF011,Computador ASUS A9654,11101,3, 4.575.000 ,5,7,Linea recta,0
+AF011,Computador ASUS A9654,11104,5, 4.575.000 ,5,3,Reduccion de saldos, 686.250 
+AF011,Computador ASUS A9654,11103,5, 4.575.000 ,5,7,Linea recta,0
+AF012,Computador DELL 2343,11101,1, 6.718.000 ,5,7,Linea recta,0
+AF012,Computador DELL 2343,11102,1, 6.718.000 ,5,7,Linea recta,0
+AF012,Computador DELL 2343,11103,1, 6.718.000 ,5,7,Linea recta,0
+AF012,Computador DELL 2343,11104,1, 6.718.000 ,5,3,Reduccion de saldos, 1.007.700 
+AF013,Computador DELL 1244,10901,2, 1.428.000 ,5,7,Linea recta,0
+AF014,Computador HP 84H T,10501,1, 1.320.000 ,5,7,Linea recta,0
+AF014,Computador HP 84H T,10702,1, 1.320.000 ,5,7,Linea recta,0
+AF016,Computador ACER 785tg,11103,2, 1.550.000 ,5,7,Linea recta,0
+AF016,Computador ACER 785tg,11102,3, 1.550.000 ,5,7,Linea recta,0
+AF017,ERP,Indirecto,1, 450.000.000 ,10,10,Linea recta,0
+AF018,Proyector Benq Tk800m 4k,Indirecto,1, 13.400.000 ,10,15,Linea recta,0
+AF019,Calentadora de Empaque,10201,3, 5.700.000 ,10,15,Linea recta,0

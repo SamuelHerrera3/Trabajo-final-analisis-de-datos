@@ -1,14 +1,11 @@
 #se importan las librerias
 import pandas
-import numpy
-import math as mat
 import re
-import os
-import csv
 
 #se setean las rutas
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
 RutaDatosLimpios = '/Cleansed/'
+RutaDatosAux = '/carpetaAux/'
 rutas = {
         'ActFijos': '/Landing/ActFijos.csv',
         'BasesDeActividad': '/Landing/BasesDeActividad.csv',
@@ -54,11 +51,14 @@ for nombre, ruta in rutas.items():
     
     #Se eliminan las filas vacias, se setea cada tipo de dato segun corresponda
     tabla = tabla.dropna()
-    tabla = tabla.convert_dtypes()
+    # tabla = tabla.convert_dtypes()
 
     #Se exporta el archivo en formato pkl, ya limpios
-    archivoPkl = nombre + '.pkl'
-    tabla.to_pickle(RAIZ + RutaDatosLimpios + archivoPkl)
-    print(archivoPkl)
+    # archivoPkl = nombre + '.pkl'
+    # tabla.to_pickle(RAIZ + RutaDatosLimpios + archivoPkl)
+    # print(archivoPkl)
+
+    archivoCSV = nombre + '.csv'
+    tabla.to_csv(RAIZ + RutaDatosAux + archivoCSV, index=False)
     print(tabla)
     print('-----------------')
