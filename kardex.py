@@ -25,6 +25,8 @@ def calcular_costo_salida(elemento, kardex):
 
     # Calcular la cantidad total de entradas y el costo total de entradas
     cantidad_total_entradas = entradas['Cantidades'].sum()
+
+    # Se calcula el costo total de las entradas(punto 4)
     costo_total_entradas = (entradas['Cantidades'] * entradas['CostoUnit']).sum()
 
     # Calcular la cantidad total de salidas
