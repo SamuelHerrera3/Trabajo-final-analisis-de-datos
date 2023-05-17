@@ -1,7 +1,7 @@
 import pandas as pd
 
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
-ruta_datos_procesados = '/Business/'
+ruta_datos_procesados = './Business/'
 
 actFijos = pd.read_csv('./carpetaAux/ActFijos.csv')
 tabla_depreciacion = actFijos[['Código', 'Referencia', 'Ubicación', 'Cantidad', 'ValorEnLibrosUnitario', 'VidaÚtil', 'VidaEconómica', 'MétodoDepreciación', 'ValorSalvamento']]
@@ -17,4 +17,4 @@ def calcular_depreciacion(row):
         return None
     
 tabla_depreciacion['Depreciación'] = tabla_depreciacion.apply(calcular_depreciacion, axis=1)
-print(tabla_depreciacion)
+tabla_depreciacion.to_csv(ruta_datos_procesados + 'tabla_depreciacion.csv', index=False)
