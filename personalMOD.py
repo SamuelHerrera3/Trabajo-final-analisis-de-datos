@@ -10,7 +10,7 @@ empleados = pd.read_csv('./carpetaAux/BDEmpleados.csv')
 #Se retiran los puntos del dataFrame
 empleados['Salario'] = empleados['Salario'].str.replace('.', '')
 #Se convierten los salarios a float para un mejor tratamiento a la hora del calculo
-empleados['salario'] = empleados['Salario'].astype(float)
+empleados['Salario'] = empleados['Salario'].astype(float)
 #Se combierten los datos a tipo numerico 
 empleados['Salario'] = pd.to_numeric(empleados['Salario'])
 
@@ -48,4 +48,4 @@ print('-----------------------------')
 
 salario_Gasto = empleados_salario['Cargo']
 
-salario_Gasto['CodDependencia'] =empleados_salario['CodDependencia']
+salario_Gasto['CodDependencia'] = empleados_salario['CodDependencia']
