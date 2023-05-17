@@ -21,4 +21,4 @@ merge = pd.merge(filtro_salidas, precios, on='Referencia')
 # Creamos una nueva columna con el valor de la multiplicación
 merge['Total'] = merge['Cantidades'].astype(int) * merge['PrecioVenta'].astype(int)
 
-merge[['Fecha', 'Referencia', 'Tipo', 'Cantidades', 'PrecioVenta', 'Total']].to_csv(RAIZ + ruta_datos_procesados + 'ingresosEmpresa.csv', index=False);
+merge[['Fecha', 'Referencia', 'Tipo', 'Cantidades', 'PrecioVenta', 'Total']].to_csv(RAIZ + ruta_datos_procesados + 'ingresosEmpresa.csv', index=False)
