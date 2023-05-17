@@ -1,7 +1,7 @@
 import pandas as pd
 
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
-ruta_datos_procesados = '/personalHoraMod/'
+ruta_datos_procesados = '/Business/'
 
 empleados_salario = pd.read_csv('./carpetaAux/BDEmpleados.csv')
 
@@ -41,8 +41,7 @@ empleados['Salario Total'] = empleados['Salario'] + empleados['AuxTPTE']
 
 empleados['Valor Hora']= empleados['Salario Total'] /240
 
-ruta_archivo = './personalHoraMod/empleados.csv'
-empleados.to_csv(ruta_archivo, index=False)
+empleados.to_csv(RAIZ + ruta_datos_procesados + 'empleados.csv', index=False)
 
 print('-----------------------------')
 
