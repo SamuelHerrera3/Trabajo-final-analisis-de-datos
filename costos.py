@@ -30,13 +30,8 @@ for columna, serie in tabla_areas_operativas[otros_costos['BaseDeActividad']].it
 otros_costos['Costos'] = arr
 
 for i in otros_costos['Recurso']:
-    print('´´´´´´´´´´´´´´´´´´´´')
-    print(i)
-    #dependiendo de lo que haya en la columna recurso de la tabla bases de actividad, 
+ 
     if i == 'Depreciacion Proyector' or i == 'Internet':
-        print('------------------------------')
-        print(otros_costos['Costos'])
-        print(type(otros_costos['Costos']))
         otros_costos['Costos'] = otros_costos['Costos'] / 104 * tabla_areas_operativas['Personas']
         otros_costos['Costos'] = otros_costos['Costos'] / 104 * tabla_areas_no_operativas['Personas']
 
