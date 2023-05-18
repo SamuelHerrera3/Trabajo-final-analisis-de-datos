@@ -11,12 +11,7 @@ tabla = aux.reindex(columns=['Fecha', 'Referencia', 'Descripción', 'Cantidades'
 
 # se diferencias materias primas de productos terminados
 materias_primas = tabla[tabla['Referencia'].str.startswith('M')]
-print(materias_primas)
-print('---------------------------------------')
 productos_terminados = tabla[tabla['Referencia'].str.startswith('P')]
-print(productos_terminados)
-# en este punto se tienen dos posibles kardex, uno para los productos terminados
-# y otro para las materias primas
 
 #funcion para calcular el costo de salida de un elemento del kardex 
 def calcular_costo_salida(elemento, kardex):
@@ -49,9 +44,7 @@ def calcular_costo_salida(elemento, kardex):
     # Devolver el costo promedio ponderado
     return costo_promedio_ponderado
 
-
 inventarioAux = pd.read_csv('./carpetaAux/InventariosIniciales.csv', usecols=['Referencia','Descripción', 'Cantidades','CostoUnit'])
-
 
 kardex_full = inventarioAux.copy()
 arr = []
