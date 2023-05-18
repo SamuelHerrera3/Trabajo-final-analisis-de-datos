@@ -1,5 +1,5 @@
 import pandas as pd
-from unidecode import unidecode
+import numpy as np
 
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
 ruta_datos_procesados = '/Business/'
@@ -8,30 +8,37 @@ baseActividad = pd.read_csv('./carpetaAux/BasesDeActividad.csv')
 infoEstadistica = pd.read_csv('./carpetaAux/InfoEstadísticaEmpresa.csv')
 
 otros_costos = baseActividad.copy()
-# kardex[(kardex['Tipo'] == 'Salida') & (kardex['Referencia'] == elemento)
+
 filtro_operativas = infoEstadistica['Dependencia'].isin(['LAVADO Y DESINFECCION', 'EMPAQUE', 'ALMACEN'])
-filtro_areas_operativas = infoEstadistica.loc[filtro_operativas]
+tabla_areas_operativas = infoEstadistica.loc[filtro_operativas]
 
 
 filtro_no_operativas = ~infoEstadistica['Dependencia'].isin(['LAVADO Y DESINFECCION', 'ALMACEN', 'EMPAQUE'])
-filtro_areas_no_operativas = infoEstadistica.loc[filtro_no_operativas]
+tabla_areas_no_operativas = infoEstadistica.loc[filtro_no_operativas]
 
-filtro_areas_operativas.columns = filtro_areas_operativas.columns.str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
+tabla_areas_operativas.columns = tabla_areas_operativas.columns.str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
+tabla_areas_no_operativas.columns = tabla_areas_no_operativas.columns.str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
 
-print('antes del proceso')
-print(otros_costos)
-otros_costos.drop_duplicates() 
-otros_costos.reset_index(drop=True)  
-duplicados = otros_costos.columns[otros_costos.columns.duplicated()]
-print(duplicados)
-for valor in otros_costos['Recurso']:
 
-    if valor == 'Depreciacion Proyector' or valor == 'Internet':
-        otros_costos['Costos'] = filtro_areas_operativas[otros_costos['BaseDeActividad']].sum() / 104 * filtro_areas_operativas['Personas']
-        otros_costos['Gastos'] = filtro_areas_no_operativas[otros_costos['BaseDeActividad']].sum() / 104 * filtro_areas_operativas['Personas']
-    else:
-        otros_costos['Costos'] = filtro_areas_operativas[otros_costos['BaseDeActividad']].sum()
-        otros_costos['Gastos'] = filtro_areas_no_operativas[otros_costos['BaseDeActividad']].sum()
+arr = []
+
+for columna, serie in tabla_areas_operativas[otros_costos['BaseDeActividad']].iteritems():
+    suma_columna = serie.sum()
+    arr.append(suma_columna)
+    print("Columna:", columna)
+    print("Suma:", suma_columna)
+otros_costos['Costos'] = arr
+
+for i in otros_costos['Recurso']:
+    print('´´´´´´´´´´´´´´´´´´´´')
+    print(i)
+    #dependiendo de lo que haya en la columna recurso de la tabla bases de actividad, 
+    if i == 'Depreciacion Proyector' or i == 'Internet':
+        print('------------------------------')
+        print(otros_costos['Costos'])
+        print(type(otros_costos['Costos']))
+        otros_costos['Costos'] = otros_costos['Costos'] / 104 * tabla_areas_operativas['Personas']
+        otros_costos['Costos'] = otros_costos['Costos'] / 104 * tabla_areas_no_operativas['Personas']
 
 print('este es el resultado final')
 print(otros_costos)
