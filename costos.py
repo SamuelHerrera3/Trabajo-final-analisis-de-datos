@@ -33,7 +33,7 @@ for i in otros_costos['Recurso']:
  
     if i == 'Depreciacion Proyector' or i == 'Internet':
         otros_costos['Costos'] = otros_costos['Costos'] / 104 * tabla_areas_operativas['Personas']
-        otros_costos['Costos'] = otros_costos['Costos'] / 104 * tabla_areas_no_operativas['Personas']
+        otros_costos['Gastos'] = otros_costos['Gastos'] / 104 * tabla_areas_no_operativas['Personas']
 
 print('este es el resultado final')
 print(otros_costos)
