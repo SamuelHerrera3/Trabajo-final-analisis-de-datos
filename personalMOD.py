@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
 ruta_datos_procesados = './Business/'
@@ -48,15 +49,13 @@ empleados.to_csv( ruta_datos_procesados + 'empleados.csv', index=False)
 print('-----------------------------')
 
 
-# salario_Gasto = empleados_salario['Cargo']
-
-# salario_Gasto['CodDependencia'] = empleados_salario['CodDependencia']
-
-PrestamosHoras['Horas'] = PrestamosHoras['Horas'].str.replace(',', '.').astype(float)
+PrestamosHoras['Horas'] = PrestamosHoras['Horas'].str.replace(',', '').astype(float)
 
 nuevo_dataframe = empleados.groupby(['Cargo','CodDependencia'])['Salario Total'].sum().reset_index(name='TotalSalarios')
 
 horasTotal = PrestamosHoras.groupby(['Cargo'])['Horas'].sum().reset_index(name='Horas Prestadas')
+
+horasTotal['DependenciaDestino'] = PrestamosHoras['DependenciaDestino']
 
 nuevo_dataframe = nuevo_dataframe.merge(horasTotal, on='Cargo', how='left')
 
@@ -67,7 +66,42 @@ nuevo_dataframe = nuevo_dataframe.merge(empleados[['Cargo', 'Valor Hora']].drop_
 nuevo_dataframe['Valor H'] = nuevo_dataframe['Valor Hora'] * nuevo_dataframe['Horas Prestadas']
 
 nuevo_dataframe = nuevo_dataframe.drop(['Valor Hora'], axis=1)
+# SALARIO GASTO: (Coger de la tabla PrestamoHoras la cantidad de horas que van para la 
+# DependenciaDestino diferente a la  DependenciaOrigen multiplicado por el 
+# valor de la hora  VALOR HORA del respectivo Cargo en BDEmpleado) más 
+# (el salario de cada CARGO de Las dependencias que no sea del CodDEPENDENCIA “LAVADO Y DESINFECCIÓN, 
+# EMPAQUE Y ALMACÉN”
 
-nuevo_dataframe['Salario Gasto'] = PrestamosHoras['DependenciaDestino']
+horas_por_dependencia = PrestamosHoras.groupby('DependenciaDestino')['Horas'].sum()
+nuevo_dataframe2 = pd.DataFrame({'DependenciaDestino': horas_por_dependencia.index, 'Horas Sumadas': horas_por_dependencia.values})
+
+
+diccionario_horas = nuevo_dataframe2.set_index('DependenciaDestino')['Horas Sumadas'].to_dict()
+
+nuevo_dataframe['Salario Gasto'] = nuevo_dataframe['CodDependencia'].map(diccionario_horas)
+
+nuevo_dataframe['Salario Gasto'] =nuevo_dataframe['Salario Gasto'] * nuevo_dataframe['Valor H']
+
+suma_condicional = lambda row: row['Salario Gasto'] + row['TotalSalarios'] if row['CodDependencia'] not in ['10101', '10201', '10901'] else row['Salario Gasto']
+
+
+nuevo_dataframe['Salario Gasto'] = nuevo_dataframe.apply(suma_condicional, axis=1)
+
+
+condicion = nuevo_dataframe['CodDependencia'].isin([10101, 10201, 10901])
+datos_filtrados = nuevo_dataframe[condicion]
+
+# Calcular la suma de 'TotalSalarios' solo para los datos filtrados
+suma_total_salarios = datos_filtrados['TotalSalarios'].sum()
+
+nuevo_dataframe['Salario Costo'] = datos_filtrados['TotalSalarios'] 
+
+condicion = (nuevo_dataframe['Salario Costo'].notna()) & (nuevo_dataframe['Salario Costo'] != 0)
+
+nuevo_dataframe.loc[condicion, 'Salario Costo'] = suma_total_salarios -nuevo_dataframe['Salario Gasto']
+
+nuevo_dataframe = nuevo_dataframe.drop(['DependenciaDestino'], axis=1)
 
 print(nuevo_dataframe)
+
+nuevo_dataframe.to_csv( ruta_datos_procesados + 'SalarioGasto.csv', index=False)

@@ -3,20 +3,19 @@ import pandas
 import re
 
 #se setean las rutas
-# RAIZ = 'C:\Users\AlejandroGuerra\Desktop\TabajoManuela\Trabajo-final-analisis-de-datos'
-RutaDatosLimpios = '/Cleansed/'
+RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
+RutaDatosLimpios = './Cleansed/'
 RutaDatosAux = './carpetaAux/'
-
-rutas = { 
-    'ActFijos': './Landing/ActFijos.csv',
-    'BasesDeActividad': './Landing/BasesDeActividad.csv',
-    'BDEmpleados': './Landing/BDEmpleados.csv',
-    'InfoEstadísticaEmpresa': './Landing/InfoEstadísticaEmpresa.csv',
-    'InventariosIniciales': './Landing/InventariosIniciales.csv',
-    'MvtoAlmacénV2': './Landing/MvtoAlmacénV2.csv',
-    'OtrosRecursos': './Landing/OtrosRecursos.csv',
-    'Precios': './Landing/Precios.csv',
-    'PrestamosHoras': './Landing/PrestamosHoras.csv',
+rutas = {
+        'ActFijos': './Landing/ActFijos.csv',
+        'BasesDeActividad': './Landing/BasesDeActividad.csv',
+        'BDEmpleados': './Landing/BDEmpleados.csv',
+        'InfoEstadísticaEmpresa': './Landing/InfoEstadísticaEmpresa.csv',
+        'InventariosIniciales': './Landing/InventariosIniciales.csv',
+        'MvtoAlmacénV2': './Landing/MvtoAlmacénV2.csv',
+        'OtrosRecursos': './Landing/OtrosRecursos.csv',
+        'Precios': './Landing/Precios.csv',
+        'PrestamosHoras': './Landing/PrestamosHoras.csv',
 }
 
 # funcion para limpiar el texto de tildes
@@ -35,21 +34,8 @@ def eliminar_tildes(texto):
     texto = re.sub('[Ñ]', 'N', texto)
     return texto
 
-def convertir_valor(valor):
-    if isinstance(valor, float):
-        return valor
-    try:
-        if '.' in valor:
-            valor = int(valor.replace('.', ''))
-        elif ',' in valor:
-            valor = float(valor.replace(',', '.'))
-    except ValueError:
-        pass
-    
-    return valor
-
 for nombre, ruta in rutas.items():
-    archivoCsv = ruta
+    archivoCsv =  ruta
     print(archivoCsv)
     tabla = pandas.read_csv(archivoCsv, sep = ";", encoding='latin1')
     #se recore la tabla para eliminar la columna unnamed
@@ -60,14 +46,19 @@ for nombre, ruta in rutas.items():
     #Se limpian los datos usando la funcion eliminar tildes, respetando mayusculas y minusculas
     #Se cambian los espacios vacios por string vacios para mejor manejo
     for col in tabla.select_dtypes(include='object'):
-        tabla[col] = tabla[col].apply(lambda x: eliminar_tildes(str(x)).replace('-', ' ') if isinstance(x, str) else x)
-        tabla[col] = tabla[col].apply(convertir_valor)
+        tabla[col] = tabla[col].apply(
+            lambda x: eliminar_tildes(str(x)).replace('-', ' ') if isinstance(x, str) else x)
     
     #Se eliminan las filas vacias, se setea cada tipo de dato segun corresponda
     tabla = tabla.dropna()
-    tabla = tabla.infer_objects()
+    tabla = tabla.convert_dtypes()
+
+    #Se exporta el archivo en formato pkl, ya limpios
+    # archivoPkl = nombre + '.pkl'
+    # tabla.to_pickle(RAIZ + RutaDatosLimpios + archivoPkl)
+    # print(archivoPkl)
 
     archivoCSV = nombre + '.csv'
-    tabla.to_csv(RutaDatosAux + archivoCSV, index=False)
+    tabla.to_csv( RutaDatosAux + archivoCSV, index=False)
     print(tabla)
     print('-----------------')
