@@ -1,19 +1,19 @@
 Referencia,Descripción,Cantidades,CostoUnit,saldo
-M001,Guayabas,25000.0,2200.0,2200.0
-M002,Azucar,18000.0,5740.0,5740.0
-M003,Conservantes,48.0,66000.0,66000.0
-M010,Empaque bocadillo,102300.0,2.0,2.0
-M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,75000.0,320.0,320.0
-M012,Bolsa Doypack con Valvula para Relleno de bocadillo 1 kg,31300.0,485.0,485.0
-M040,Guantes de nitrilo,20.0,36000.0,No hay elementos disponibles
-M041,Gorros de proteccion,7.0,18700.0,No hay elementos disponibles
-M042,Gafas de proteccion,12.0,5800.0,No hay elementos disponibles
-M043,Uniforme antifluidos,7.0,57000.0,No hay elementos disponibles
-M050,Papel en resma 500 gr,12.0,28000.0,No hay elementos disponibles
-M051,Tijeras de oficina,5.0,11000.0,No hay elementos disponibles
-M052,Lapiceros,135.0,659.0,No hay elementos disponibles
-M053,Cosedora,9.0,22500.0,No hay elementos disponibles
-P001,Barra de bocadillo 150 grs,11105.0,3145.0,3145.0
-P002,Barra de bocadillo 250 grs,26465.0,4154.0,4154.0
-P003,Mermelada 200 gr,31848.0,4134.0,4134.0
-P004,Relleno de bocadillo 1 kg,8868.0,12462.0,12462.0
+M001,Guayabas,25000,2200,2200.0
+M002,Azucar,18000,5740,5740.0
+M003,Conservantes,48,66000,66000.0
+M010,Empaque bocadillo,102300,2,2.0
+M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,75000,320,320.0
+M012,Bolsa Doypack con Valvula para Relleno de bocadillo 1 kg,31300,485,485.0
+M040,Guantes de nitrilo,20,36000,No hay elementos disponibles
+M041,Gorros de proteccion,7,18700,No hay elementos disponibles
+M042,Gafas de proteccion,12,5800,No hay elementos disponibles
+M043,Uniforme antifluidos,7,57000,No hay elementos disponibles
+M050,Papel en resma 500 gr,12,28000,No hay elementos disponibles
+M051,Tijeras de oficina,5,11000,No hay elementos disponibles
+M052,Lapiceros,135,659,No hay elementos disponibles
+M053,Cosedora,9,22500,No hay elementos disponibles
+P001,Barra de bocadillo 150 grs,11105,3145,3145.0
+P002,Barra de bocadillo 250 grs,26465,4154,4154.0
+P003,Mermelada 200 gr,31848,4134,4134.0
+P004,Relleno de bocadillo 1 kg,8868,12462,12462.0

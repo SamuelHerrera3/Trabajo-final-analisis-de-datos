@@ -1,6 +1,7 @@
 #se importan las librerias
 import pandas
 import re
+import numpy as np
 
 #se setean las rutas
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
@@ -34,6 +35,26 @@ def eliminar_tildes(texto):
     texto = re.sub('[Ñ]', 'N', texto)
     return texto
 
+def convertir_valor(valor):
+    if isinstance(valor, float):
+        valor = str(valor)
+    try:
+        if '.' in valor:
+            valor = int(valor.replace('.', ''))
+        elif ',' in valor:
+            valor = int(valor.replace(',', '.'))
+        elif 'nan' in valor:
+            valor = None
+
+    except ValueError:
+        valor = valor.replace(' ','').replace('.','').replace(',','.')
+        if valor:
+            valor = float(valor)
+        else:
+            valor = None
+        return valor
+    return valor
+
 for nombre, ruta in rutas.items():
     archivoCsv =  ruta
     print(archivoCsv)
@@ -48,15 +69,11 @@ for nombre, ruta in rutas.items():
     for col in tabla.select_dtypes(include='object'):
         tabla[col] = tabla[col].apply(
             lambda x: eliminar_tildes(str(x)).replace('-', ' ') if isinstance(x, str) else x)
+        tabla[col] = tabla[col].apply(lambda x: convertir_valor(x))
     
     #Se eliminan las filas vacias, se setea cada tipo de dato segun corresponda
     tabla = tabla.dropna()
     tabla = tabla.convert_dtypes()
-
-    #Se exporta el archivo en formato pkl, ya limpios
-    # archivoPkl = nombre + '.pkl'
-    # tabla.to_pickle(RAIZ + RutaDatosLimpios + archivoPkl)
-    # print(archivoPkl)
 
     archivoCSV = nombre + '.csv'
     tabla.to_csv( RutaDatosAux + archivoCSV, index=False)

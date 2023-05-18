@@ -3,9 +3,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 01/03/2023,P002,Barra de bocadillo 250 grs,Entrada,5884,Unidades
 01/03/2023,P003,Mermelada 200 gr,Entrada,17739,Unidades
 01/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1983,Unidades
-01/03/2023,M001,Guayabas,Salida,"5685,818",kilos
-01/03/2023,M002,Azucar,Salida,"3529,423",kilos
-01/03/2023,M003,Conservantes,Salida,"23,7405",kilos
+01/03/2023,M001,Guayabas,Salida,5685.818,kilos
+01/03/2023,M002,Azucar,Salida,3529.423,kilos
+01/03/2023,M003,Conservantes,Salida,23.7405,kilos
 01/03/2023,M010,Empaque bocadillo,Salida,6500,Unidades
 01/03/2023,M010,Empaque bocadillo,Salida,10000,Unidades
 01/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,20000,Unidades
@@ -19,14 +19,14 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 02/03/2023,P002,Barra de bocadillo 250 grs,Entrada,14054,Unidades
 02/03/2023,P003,Mermelada 200 gr,Entrada,6910,Unidades
 02/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,2676,Unidades
-02/03/2023,M001,Guayabas,Salida,"5710,769",kilos
-02/03/2023,M002,Azucar,Salida,"3563,903",kilos
-02/03/2023,M003,Conservantes,Salida,"23,93265",kilos
+02/03/2023,M001,Guayabas,Salida,5710.769,kilos
+02/03/2023,M002,Azucar,Salida,3563.903,kilos
+02/03/2023,M003,Conservantes,Salida,23.93265,kilos
 02/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 02/03/2023,M010,Empaque bocadillo,Salida,15000,Unidades
 02/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,20000,Unidades
 02/03/2023,M012,Bolsa Doypack con Valvula para Relleno de bocadillo 1 kg,Salida,3000,Unidades
-02/03/2023,M003,Conservantes,Entrada,"200,00",kilos
+02/03/2023,M003,Conservantes,Entrada,200.0,kilos
 02/03/2023,P001,Barra de bocadillo 150 grs,Salida,5100,Unidades
 02/03/2023,P002,Barra de bocadillo 250 grs,Salida,8200,Unidades
 02/03/2023,P003,Mermelada 200 gr,Salida,11000,Unidades
@@ -35,9 +35,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 03/03/2023,P002,Barra de bocadillo 250 grs,Entrada,15105,Unidades
 03/03/2023,P003,Mermelada 200 gr,Entrada,24422,Unidades
 03/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,678,Unidades
-03/03/2023,M001,Guayabas,Salida,"6811,967",kilos
-03/03/2023,M002,Azucar,Salida,"4568,232",kilos
-03/03/2023,M003,Conservantes,Salida,"30,70605",kilos
+03/03/2023,M001,Guayabas,Salida,6811.967,kilos
+03/03/2023,M002,Azucar,Salida,4568.232,kilos
+03/03/2023,M003,Conservantes,Salida,30.70605,kilos
 03/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 03/03/2023,M010,Empaque bocadillo,Salida,15000,Unidades
 03/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,20000,Unidades
@@ -50,9 +50,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 06/03/2023,P002,Barra de bocadillo 250 grs,Entrada,14863,Unidades
 06/03/2023,P003,Mermelada 200 gr,Entrada,21106,Unidades
 06/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1110,Unidades
-06/03/2023,M001,Guayabas,Salida,"6778,522",kilos
-06/03/2023,M002,Azucar,Salida,"4497,435",kilos
-06/03/2023,M003,Conservantes,Salida,"30,2256",kilos
+06/03/2023,M001,Guayabas,Salida,6778.522,kilos
+06/03/2023,M002,Azucar,Salida,4497.435,kilos
+06/03/2023,M003,Conservantes,Salida,30.2256,kilos
 06/03/2023,M010,Empaque bocadillo,Salida,5500,Unidades
 06/03/2023,M010,Empaque bocadillo,Salida,15000,Unidades
 06/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,20000,Unidades
@@ -68,9 +68,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 07/03/2023,P002,Barra de bocadillo 250 grs,Entrada,17229,Unidades
 07/03/2023,P003,Mermelada 200 gr,Entrada,8945,Unidades
 07/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,3065,Unidades
-07/03/2023,M001,Guayabas,Salida,"6641,467",kilos
-07/03/2023,M002,Azucar,Salida,"4140,581",kilos
-07/03/2023,M003,Conservantes,Salida,"27,80505",kilos
+07/03/2023,M001,Guayabas,Salida,6641.467,kilos
+07/03/2023,M002,Azucar,Salida,4140.581,kilos
+07/03/2023,M003,Conservantes,Salida,27.80505,kilos
 07/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 07/03/2023,M010,Empaque bocadillo,Salida,15000,Unidades
 07/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,20000,Unidades
@@ -83,9 +83,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 08/03/2023,P002,Barra de bocadillo 250 grs,Entrada,2386,Unidades
 08/03/2023,P003,Mermelada 200 gr,Entrada,2889,Unidades
 08/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,2294,Unidades
-08/03/2023,M001,Guayabas,Salida,"3304,195",kilos
-08/03/2023,M002,Azucar,Salida,"1908,54",kilos
-08/03/2023,M003,Conservantes,Salida,"12,82995",kilos
+08/03/2023,M001,Guayabas,Salida,3304.195,kilos
+08/03/2023,M002,Azucar,Salida,1908.54,kilos
+08/03/2023,M003,Conservantes,Salida,12.82995,kilos
 08/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 08/03/2023,M010,Empaque bocadillo,Salida,12000,Unidades
 08/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,20000,Unidades
@@ -98,9 +98,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 09/03/2023,P002,Barra de bocadillo 250 grs,Entrada,3033,Unidades
 09/03/2023,P003,Mermelada 200 gr,Entrada,17136,Unidades
 09/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,2458,Unidades
-09/03/2023,M001,Guayabas,Salida,"5267,234",kilos
-09/03/2023,M002,Azucar,Salida,"3114,699",kilos
-09/03/2023,M003,Conservantes,Salida,"20,9622",kilos
+09/03/2023,M001,Guayabas,Salida,5267.234,kilos
+09/03/2023,M002,Azucar,Salida,3114.699,kilos
+09/03/2023,M003,Conservantes,Salida,20.9622,kilos
 09/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 09/03/2023,M010,Empaque bocadillo,Salida,12000,Unidades
 09/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,15000,Unidades
@@ -115,9 +115,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 10/03/2023,P002,Barra de bocadillo 250 grs,Entrada,19817,Unidades
 10/03/2023,P003,Mermelada 200 gr,Entrada,18970,Unidades
 10/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,2682,Unidades
-10/03/2023,M001,Guayabas,Salida,"8532,036",kilos
-10/03/2023,M002,Azucar,Salida,"5487,715",kilos
-10/03/2023,M003,Conservantes,Salida,"36,8679",kilos
+10/03/2023,M001,Guayabas,Salida,8532.036,kilos
+10/03/2023,M002,Azucar,Salida,5487.715,kilos
+10/03/2023,M003,Conservantes,Salida,36.8679,kilos
 10/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 10/03/2023,M010,Empaque bocadillo,Salida,12000,Unidades
 10/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,15000,Unidades
@@ -132,15 +132,15 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 13/03/2023,P002,Barra de bocadillo 250 grs,Entrada,13872,Unidades
 13/03/2023,P003,Mermelada 200 gr,Entrada,7739,Unidades
 13/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1598,Unidades
-13/03/2023,M001,Guayabas,Salida,"5496,477",kilos
-13/03/2023,M002,Azucar,Salida,"3638,61",kilos
-13/03/2023,M003,Conservantes,Salida,"24,43185",kilos
+13/03/2023,M001,Guayabas,Salida,5496.477,kilos
+13/03/2023,M002,Azucar,Salida,3638.61,kilos
+13/03/2023,M003,Conservantes,Salida,24.43185,kilos
 13/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 13/03/2023,M010,Empaque bocadillo,Salida,12000,Unidades
 13/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,15000,Unidades
 13/03/2023,M012,Bolsa Doypack con Valvula para Relleno de bocadillo 1 kg,Salida,2000,Unidades
 13/03/2023,M001,Guayabas,Entrada,34000,kilos
-13/03/2023,M003,Conservantes,Entrada,"230,00",kilos
+13/03/2023,M003,Conservantes,Entrada,230.0,kilos
 13/03/2023,M052,Lapiceros,Salida,28,Unidades
 13/03/2023,P001,Barra de bocadillo 150 grs,Salida,5100,Unidades
 13/03/2023,P002,Barra de bocadillo 250 grs,Salida,4100,Unidades
@@ -150,9 +150,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 14/03/2023,P002,Barra de bocadillo 250 grs,Entrada,14479,Unidades
 14/03/2023,P003,Mermelada 200 gr,Entrada,10678,Unidades
 14/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,71,Unidades
-14/03/2023,M001,Guayabas,Salida,"3933,707",kilos
-14/03/2023,M002,Azucar,Salida,"2767,404",kilos
-14/03/2023,M003,Conservantes,Salida,"18,57885",kilos
+14/03/2023,M001,Guayabas,Salida,3933.707,kilos
+14/03/2023,M002,Azucar,Salida,2767.404,kilos
+14/03/2023,M003,Conservantes,Salida,18.57885,kilos
 14/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 14/03/2023,M010,Empaque bocadillo,Salida,12000,Unidades
 14/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,15000,Unidades
@@ -162,9 +162,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 15/03/2023,P002,Barra de bocadillo 250 grs,Entrada,14337,Unidades
 15/03/2023,P003,Mermelada 200 gr,Entrada,19271,Unidades
 15/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1694,Unidades
-15/03/2023,M001,Guayabas,Salida,"6369,878",kilos
-15/03/2023,M002,Azucar,Salida,"4084,762",kilos
-15/03/2023,M003,Conservantes,Salida,"27,4536",kilos
+15/03/2023,M001,Guayabas,Salida,6369.878,kilos
+15/03/2023,M002,Azucar,Salida,4084.762,kilos
+15/03/2023,M003,Conservantes,Salida,27.4536,kilos
 15/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 15/03/2023,M010,Empaque bocadillo,Salida,12000,Unidades
 15/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,10000,Unidades
@@ -178,9 +178,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 16/03/2023,P002,Barra de bocadillo 250 grs,Entrada,17451,Unidades
 16/03/2023,P003,Mermelada 200 gr,Entrada,6332,Unidades
 16/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,342,Unidades
-16/03/2023,M001,Guayabas,Salida,"4875,206",kilos
-16/03/2023,M002,Azucar,Salida,"3484,173",kilos
-16/03/2023,M003,Conservantes,Salida,"23,3778",kilos
+16/03/2023,M001,Guayabas,Salida,4875.206,kilos
+16/03/2023,M002,Azucar,Salida,3484.173,kilos
+16/03/2023,M003,Conservantes,Salida,23.3778,kilos
 16/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 16/03/2023,M010,Empaque bocadillo,Salida,12000,Unidades
 16/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,10000,Unidades
@@ -194,9 +194,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 17/03/2023,P002,Barra de bocadillo 250 grs,Entrada,2164,Unidades
 17/03/2023,P003,Mermelada 200 gr,Entrada,10553,Unidades
 17/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,3006,Unidades
-17/03/2023,M001,Guayabas,Salida,"4506,413",kilos
-17/03/2023,M002,Azucar,Salida,"2523,132",kilos
-17/03/2023,M003,Conservantes,Salida,"16,97865",kilos
+17/03/2023,M001,Guayabas,Salida,4506.413,kilos
+17/03/2023,M002,Azucar,Salida,2523.132,kilos
+17/03/2023,M003,Conservantes,Salida,16.97865,kilos
 17/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 17/03/2023,M010,Empaque bocadillo,Salida,10000,Unidades
 17/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,10000,Unidades
@@ -208,15 +208,15 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 20/03/2023,P002,Barra de bocadillo 250 grs,Entrada,3721,Unidades
 20/03/2023,P003,Mermelada 200 gr,Entrada,1030,Unidades
 20/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1946,Unidades
-20/03/2023,M001,Guayabas,Salida,"2912,918",kilos
-20/03/2023,M002,Azucar,Salida,"1724,805",kilos
-20/03/2023,M003,Conservantes,Salida,"11,5872",kilos
+20/03/2023,M001,Guayabas,Salida,2912.918,kilos
+20/03/2023,M002,Azucar,Salida,1724.805,kilos
+20/03/2023,M003,Conservantes,Salida,11.5872,kilos
 20/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 20/03/2023,M010,Empaque bocadillo,Salida,10000,Unidades
 20/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,10000,Unidades
 20/03/2023,M012,Bolsa Doypack con Valvula para Relleno de bocadillo 1 kg,Salida,1000,Unidades
-20/03/2023,M002,Azucar,Entrada,"32029,067",kilos
-20/03/2023,M003,Conservantes,Entrada,"104,29",kilos
+20/03/2023,M002,Azucar,Entrada,32029.067,kilos
+20/03/2023,M003,Conservantes,Entrada,104.29,kilos
 20/03/2023,P001,Barra de bocadillo 150 grs,Salida,5100,Unidades
 20/03/2023,P002,Barra de bocadillo 250 grs,Salida,16400,Unidades
 20/03/2023,P003,Mermelada 200 gr,Salida,12000,Unidades
@@ -225,9 +225,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 21/03/2023,P002,Barra de bocadillo 250 grs,Entrada,8796,Unidades
 21/03/2023,P003,Mermelada 200 gr,Entrada,14347,Unidades
 21/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,2928,Unidades
-21/03/2023,M001,Guayabas,Salida,"6812,077",kilos
-21/03/2023,M002,Azucar,Salida,"4213,602",kilos
-21/03/2023,M003,Conservantes,Salida,"28,32585",kilos
+21/03/2023,M001,Guayabas,Salida,6812.077,kilos
+21/03/2023,M002,Azucar,Salida,4213.602,kilos
+21/03/2023,M003,Conservantes,Salida,28.32585,kilos
 21/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 21/03/2023,M010,Empaque bocadillo,Salida,10000,Unidades
 21/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,10000,Unidades
@@ -240,9 +240,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 22/03/2023,P002,Barra de bocadillo 250 grs,Entrada,6815,Unidades
 22/03/2023,P003,Mermelada 200 gr,Entrada,10302,Unidades
 22/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1644,Unidades
-22/03/2023,M001,Guayabas,Salida,"4237,334",kilos
-22/03/2023,M002,Azucar,Salida,"2639,239",kilos
-22/03/2023,M003,Conservantes,Salida,"17,7414",kilos
+22/03/2023,M001,Guayabas,Salida,4237.334,kilos
+22/03/2023,M002,Azucar,Salida,2639.239,kilos
+22/03/2023,M003,Conservantes,Salida,17.7414,kilos
 22/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 22/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 22/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,10000,Unidades
@@ -257,9 +257,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 23/03/2023,P002,Barra de bocadillo 250 grs,Entrada,4792,Unidades
 23/03/2023,P003,Mermelada 200 gr,Entrada,15402,Unidades
 23/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,2738,Unidades
-23/03/2023,M001,Guayabas,Salida,"5982,497",kilos
-23/03/2023,M002,Azucar,Salida,"3616,457",kilos
-23/03/2023,M003,Conservantes,Salida,"24,32565",kilos
+23/03/2023,M001,Guayabas,Salida,5982.497,kilos
+23/03/2023,M002,Azucar,Salida,3616.457,kilos
+23/03/2023,M003,Conservantes,Salida,24.32565,kilos
 23/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 23/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 23/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,10000,Unidades
@@ -272,9 +272,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 24/03/2023,P002,Barra de bocadillo 250 grs,Entrada,11364,Unidades
 24/03/2023,P003,Mermelada 200 gr,Entrada,14498,Unidades
 24/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1103,Unidades
-24/03/2023,M001,Guayabas,Salida,"5381,554",kilos
-24/03/2023,M002,Azucar,Salida,"3556,322",kilos
-24/03/2023,M003,Conservantes,Salida,"23,8977",kilos
+24/03/2023,M001,Guayabas,Salida,5381.554,kilos
+24/03/2023,M002,Azucar,Salida,3556.322,kilos
+24/03/2023,M003,Conservantes,Salida,23.8977,kilos
 24/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 24/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 24/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,10000,Unidades
@@ -287,9 +287,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 27/03/2023,P002,Barra de bocadillo 250 grs,Entrada,10596,Unidades
 27/03/2023,P003,Mermelada 200 gr,Entrada,14824,Unidades
 27/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1066,Unidades
-27/03/2023,M001,Guayabas,Salida,"5523,678",kilos
-27/03/2023,M002,Azucar,Salida,"3666,666",kilos
-27/03/2023,M003,Conservantes,Salida,"24,6411",kilos
+27/03/2023,M001,Guayabas,Salida,5523.678,kilos
+27/03/2023,M002,Azucar,Salida,3666.666,kilos
+27/03/2023,M003,Conservantes,Salida,24.6411,kilos
 27/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 27/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 27/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,5000,Unidades
@@ -305,9 +305,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 28/03/2023,P002,Barra de bocadillo 250 grs,Entrada,586,Unidades
 28/03/2023,P003,Mermelada 200 gr,Entrada,2990,Unidades
 28/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1010,Unidades
-28/03/2023,M001,Guayabas,Salida,"2474,459",kilos
-28/03/2023,M002,Azucar,Salida,"1579,837",kilos
-28/03/2023,M003,Conservantes,Salida,"10,62075",kilos
+28/03/2023,M001,Guayabas,Salida,2474.459,kilos
+28/03/2023,M002,Azucar,Salida,1579.837,kilos
+28/03/2023,M003,Conservantes,Salida,10.62075,kilos
 28/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 28/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 28/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,5000,Unidades
@@ -320,9 +320,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 29/03/2023,P002,Barra de bocadillo 250 grs,Entrada,14377,Unidades
 29/03/2023,P003,Mermelada 200 gr,Entrada,9824,Unidades
 29/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,1103,Unidades
-29/03/2023,M001,Guayabas,Salida,"4530,347",kilos
-29/03/2023,M002,Azucar,Salida,"2991,64",kilos
-29/03/2023,M003,Conservantes,Salida,"20,08785",kilos
+29/03/2023,M001,Guayabas,Salida,4530.347,kilos
+29/03/2023,M002,Azucar,Salida,2991.64,kilos
+29/03/2023,M003,Conservantes,Salida,20.08785,kilos
 29/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 29/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 29/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,5000,Unidades
@@ -335,9 +335,9 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 30/03/2023,P002,Barra de bocadillo 250 grs,Entrada,1112,Unidades
 30/03/2023,P003,Mermelada 200 gr,Entrada,6457,Unidades
 30/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,2244,Unidades
-30/03/2023,M001,Guayabas,Salida,"4004,989",kilos
-30/03/2023,M002,Azucar,Salida,"2389,404",kilos
-30/03/2023,M003,Conservantes,Salida,"16,07025",kilos
+30/03/2023,M001,Guayabas,Salida,4004.989,kilos
+30/03/2023,M002,Azucar,Salida,2389.404,kilos
+30/03/2023,M003,Conservantes,Salida,16.07025,kilos
 30/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 30/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 30/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,5000,Unidades
@@ -350,14 +350,14 @@ Fecha,Referencia,Descripción,Tipo,Cantidades,UnidadDeMedida
 31/03/2023,P002,Barra de bocadillo 250 grs,Entrada,627,Unidades
 31/03/2023,P003,Mermelada 200 gr,Entrada,20477,Unidades
 31/03/2023,P004,Relleno de bocadillo 1 kg,Entrada,99,Unidades
-31/03/2023,M001,Guayabas,Salida,"3455,321",kilos
-31/03/2023,M002,Azucar,Salida,"2242,485",kilos
-31/03/2023,M003,Conservantes,Salida,"15,10635",kilos
+31/03/2023,M001,Guayabas,Salida,3455.321,kilos
+31/03/2023,M002,Azucar,Salida,2242.485,kilos
+31/03/2023,M003,Conservantes,Salida,15.10635,kilos
 31/03/2023,M010,Empaque bocadillo,Salida,6000,Unidades
 31/03/2023,M010,Empaque bocadillo,Salida,5000,Unidades
 31/03/2023,M011,Bolsa Doypack con Valvula para Mermelada de 250 gr,Salida,5000,Unidades
 31/03/2023,M012,Bolsa Doypack con Valvula para Relleno de bocadillo 1 kg,Salida,1000,Unidades
-31/03/2023,M001,Guayabas,Entrada,"32628,843",kilos
+31/03/2023,M001,Guayabas,Entrada,32628.843,kilos
 31/03/2023,P001,Barra de bocadillo 150 grs,Salida,5100,Unidades
 31/03/2023,P002,Barra de bocadillo 250 grs,Salida,4100,Unidades
 31/03/2023,P003,Mermelada 200 gr,Salida,12000,Unidades
