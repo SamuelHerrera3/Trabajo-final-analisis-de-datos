@@ -6,8 +6,7 @@ depreciacion = pd.read_csv('./Business/depreciacion.csv')
 
 
 # Crear DataFrame inicial con las columnas "Conceptos" y "2023"
-data = {'Conceptos': ['ingresos', 'costos', 'utilidad bruta', 'Gastos Administrativos', 'Depreciaciones', 'Utilidad Operacional'
-,'Utilidad Antes Impuestos', 'Impuestos', 'Utilidad Neta']}
+data = {'Conceptos': ['ingresos', 'costos', 'utilidad bruta', 'Gastos Administrativos', 'Depreciaciones', 'Utilidad Operacional', 'Utilidad Antes Impuestos', 'Impuestos', 'Utilidad Neta']}
 df = pd.DataFrame(data, columns=['Conceptos', '2023'])
 
 total_suma = ingresos['Total'].sum()
