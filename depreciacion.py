@@ -8,9 +8,9 @@ tabla_depreciacion = actFijos[['Código', 'Referencia', 'Ubicación', 'Cantidad'
 
 def calcular_depreciacion(row):
     if row['MétodoDepreciación'] == 'Linea recta':
-        return (row['ValorEnLibrosUnitario'] - row['VidaÚtil']) / row['VidaÚtil'];
+        return row['ValorEnLibrosUnitario'] / row['VidaÚtil'];
     elif row['MétodoDepreciación'] == 'Reduccion de saldos':
-        return 1-(row['ValorSalvamento'] / row['ValorEnLibrosUnitario'])
+        return row['ValorEnLibrosUnitario'] * 1-(row['ValorSalvamento'] / row['ValorEnLibrosUnitario']) ** (1/row['VidaÚtil'])
     elif row['MétodoDepreciación'] == 'No se deprecia':
         return 0
     else:

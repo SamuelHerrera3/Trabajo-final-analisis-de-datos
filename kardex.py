@@ -1,7 +1,8 @@
 import pandas as pd
+import numpy as np
 
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
-ruta_datos_procesados = '/Business/'
+ruta_datos_procesados = './Business/'
 
 inventario = pd.read_csv('./carpetaAux/InventariosIniciales.csv', usecols=['Referencia','Cantidades','CostoUnit' ])
 almacen = pd.read_csv('./carpetaAux/MvtoAlmacénV2.csv', usecols=['Fecha', 'Referencia', 'Descripción', 'Tipo'])
@@ -36,19 +37,30 @@ def calcular_costo_salida(elemento, kardex):
     saldo_inventario = cantidad_total_entradas - cantidad_total_salidas
     
     # Verificar si no hay elementos disponibles
-    if saldo_inventario == 0:
+    if saldo_inventario == 0 :
         return "No hay elementos disponibles"
     
     # Calcular el costo promedio ponderado dividiendo el costo total de entradas por la cantidad total de entradas
     costo_promedio_ponderado = costo_total_entradas / cantidad_total_entradas
+
+    if np.isnan(costo_promedio_ponderado):
+        return "No hay elementos disponibles"
     
     # Devolver el costo promedio ponderado
     return costo_promedio_ponderado
 
-# EJEMPLO DE USO
-elemento = 'P001'
-costo_salida = calcular_costo_salida(elemento, productos_terminados)
-print("El costo de salida del elemento", elemento, "es:", costo_salida)
+
+inventarioAux = pd.read_csv('./carpetaAux/InventariosIniciales.csv', usecols=['Referencia','Descripción', 'Cantidades','CostoUnit'])
+
+
+kardex_full = inventarioAux.copy()
+arr = []
+for index, row in kardex_full.iterrows():
+    result = calcular_costo_salida(row['Referencia'], aux)
+    arr.append(result)
+kardex_full['saldo'] = arr
+
+kardex_full.to_csv(ruta_datos_procesados + 'kardex.csv', index=False)
 
 
 # DIAGRAMA DE FLUJO
