@@ -17,4 +17,4 @@ def calcular_depreciacion(row):
         return None
     
 tabla_depreciacion['Depreciación'] = tabla_depreciacion.apply(calcular_depreciacion, axis=1)
-tabla_depreciacion.to_csv(ruta_datos_procesados + 'tabla_depreciacion.csv', index=False)
+tabla_depreciacion.to_csv(ruta_datos_procesados + 'depreciacion.csv', index=False)

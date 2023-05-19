@@ -5,6 +5,7 @@ ingresos = pd.read_csv('./Business/ingresosEmpresa.csv')
 depreciacion = pd.read_csv('./Business/depreciacion.csv')
 kardex = pd.read_csv('./Business/Kardex.csv')
 empleados = pd.read_csv('./Business/empleados.csv')
+otros_costos = pd.read_csv('./Business/otros_costos.csv')
 
 #Empaque almacenamiento y lavado 
 
@@ -24,11 +25,12 @@ productos_terminados = kardex[kardex['Referencia'].str.startswith('P')]
 
 productos_terminados = productos_terminados['saldo'].astype(float).sum()
 
-costos = costos + productos_terminados + 'otros costos operativos '
+otros_costos_operativos = otros_costos['Costos'].sum()
+costos = costos + productos_terminados + otros_costos_operativos
 
 # Crear DataFrame inicial con las columnas "Conceptos" y "2023"
 data = {'Conceptos': ['ingresos', 'costos', 'utilidad bruta', 'Gastos Administrativos', 'Depreciaciones', 'Utilidad Operacional', 'Utilidad Antes Impuestos', 'Impuestos', 'Utilidad Neta']}
-df = pd.DataFrame(data, columns=['Conceptos', '2023'])
+eri = pd.DataFrame(data, columns=['Conceptos', '2023'])
 
 total_suma = ingresos['Total'].sum()
 total_depreciacion = depreciacion['Depreciación'].sum()
@@ -39,15 +41,15 @@ utilidad_operacional = utilidad_bruta - gastos -total_depreciacion
 impuestos = utilidad_operacional * 0.35
 
 # Agregar filas con los valores deseados
-df.loc[0, '2023'] = total_suma  # Valor para ingresos
-df.loc[1, '2023'] = costos  # Valor para costos
-df.loc[2, '2023'] = utilidad_bruta # Valor para utilidad bruta
-df.loc[3, '2023'] = gastos  # Valor para utilidad bruta
-df.loc[4, '2023'] = total_depreciacion  # Valor para utilidad bruta
-df.loc[5, '2023'] =  utilidad_operacional # Valor para utilidad bruta
-df.loc[6, '2023'] = utilidad_operacional # Valor para utilidad bruta
-df.loc[7, '2023'] = impuestos # Valor para utilidad bruta
-df.loc[8, '2023'] = utilidad_operacional - impuestos # Valor para utilidad bruta
+eri.loc[0, '2023'] = total_suma  # Valor para ingresos
+eri.loc[1, '2023'] = costos  # Valor para costos
+eri.loc[2, '2023'] = utilidad_bruta # Valor para utilidad bruta
+eri.loc[3, '2023'] = gastos  # Valor para utilidad bruta
+eri.loc[4, '2023'] = total_depreciacion  # Valor para utilidad bruta
+eri.loc[5, '2023'] =  utilidad_operacional # Valor para utilidad bruta
+eri.loc[6, '2023'] = utilidad_operacional # Valor para utilidad bruta
+eri.loc[7, '2023'] = impuestos # Valor para utilidad bruta
+eri.loc[8, '2023'] = utilidad_operacional - impuestos # Valor para utilidad bruta
 
-df.to_csv( ruta_datos_procesados + 'ERI.csv', index=False)
-print(df)
+eri.to_csv( ruta_datos_procesados + 'ERI.csv', index=False)
+print(eri)

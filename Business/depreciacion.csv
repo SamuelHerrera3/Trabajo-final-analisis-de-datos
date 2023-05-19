@@ -1,28 +1,28 @@
 Código,Referencia,Ubicación,Cantidad,ValorEnLibrosUnitario,VidaÚtil,VidaEconómica,MétodoDepreciación,ValorSalvamento,Depreciación
 AF001,Terreno,Indirecto,1,859400000,0,0,No se deprecia,0,0.0
-AF002,Edificio,Indirecto,1,635000000,45,50,Linea recta,0,14111110.111111112
-AF003,Camion de compras,10901,1,250000000,10,20,Linea recta,0,24999999.0
-AF003,Camion de compras,Indirecto,1,250000000,10,20,Linea recta,0,24999999.0
-AF004,Camion de distribucion,Indirecto,5,115000000,10,20,Linea recta,0,11499999.0
-AF005,Maquina de lavado,10101,2,30250000,10,15,Linea recta,0,3024999.0
-AF006,Despulpadora 230 Litros,10101,2,57300000,10,15,Reduccion de saldos,5730000,0.9
-AF007,Despulpadora 500 Litros,10101,3,127700000,10,15,Reduccion de saldos,6385000,0.95
-AF008,Secadora,10101,2,45200000,10,15,Linea recta,0,4519999.0
-AF009,Silos de coccion,10103,3,90000000,10,10,Linea recta,0,8999999.0
-AF010,Moldes,10104,10000,30500,3,3,Reduccion de saldos,1525,0.95
-AF011,Computador ASUS A9654,10701,2,4575000,5,7,Linea recta,0,914999.0
-AF011,Computador ASUS A9654,11101,3,4575000,5,7,Linea recta,0,914999.0
-AF011,Computador ASUS A9654,11104,5,4575000,5,3,Reduccion de saldos,686250,0.85
-AF011,Computador ASUS A9654,11103,5,4575000,5,7,Linea recta,0,914999.0
-AF012,Computador DELL 2343,11101,1,6718000,5,7,Linea recta,0,1343599.0
-AF012,Computador DELL 2343,11102,1,6718000,5,7,Linea recta,0,1343599.0
-AF012,Computador DELL 2343,11103,1,6718000,5,7,Linea recta,0,1343599.0
-AF012,Computador DELL 2343,11104,1,6718000,5,3,Reduccion de saldos,1007700,0.85
-AF013,Computador DELL 1244,10901,2,1428000,5,7,Linea recta,0,285599.0
-AF014,Computador HP 84H T,10501,1,1320000,5,7,Linea recta,0,263999.0
-AF014,Computador HP 84H T,10702,1,1320000,5,7,Linea recta,0,263999.0
-AF016,Computador ACER 785tg,11103,2,1550000,5,7,Linea recta,0,309999.0
-AF016,Computador ACER 785tg,11102,3,1550000,5,7,Linea recta,0,309999.0
-AF017,ERP,Indirecto,1,450000000,10,10,Linea recta,0,44999999.0
-AF018,Proyector Benq Tk800m 4k,Indirecto,1,13400000,10,15,Linea recta,0,1339999.0
-AF019,Calentadora de Empaque,10201,3,5700000,10,15,Linea recta,0,569999.0
+AF002,Edificio,Indirecto,1,635000000,45,50,Linea recta,0,14111111.111111112
+AF003,Camion de compras,10901,1,250000000,10,20,Linea recta,0,25000000.0
+AF003,Camion de compras,Indirecto,1,250000000,10,20,Linea recta,0,25000000.0
+AF004,Camion de distribucion,Indirecto,5,115000000,10,20,Linea recta,0,11500000.0
+AF005,Maquina de lavado,10101,2,30250000,10,15,Linea recta,0,3025000.0
+AF006,Despulpadora 230 Litros,10101,2,57300000,10,15,Reduccion de saldos,5730000,57299999.205671765
+AF007,Despulpadora 500 Litros,10101,3,127700000,10,15,Reduccion de saldos,6385000,127699999.25886555
+AF008,Secadora,10101,2,45200000,10,15,Linea recta,0,4520000.0
+AF009,Silos de coccion,10103,3,90000000,10,10,Linea recta,0,9000000.0
+AF010,Moldes,10104,10000,30500,3,3,Reduccion de saldos,1525,30499.631596850137
+AF011,Computador ASUS A9654,10701,2,4575000,5,7,Linea recta,0,915000.0
+AF011,Computador ASUS A9654,11101,3,4575000,5,7,Linea recta,0,915000.0
+AF011,Computador ASUS A9654,11104,5,4575000,5,3,Reduccion de saldos,686250,4574999.315744571
+AF011,Computador ASUS A9654,11103,5,4575000,5,7,Linea recta,0,915000.0
+AF012,Computador DELL 2343,11101,1,6718000,5,7,Linea recta,0,1343600.0
+AF012,Computador DELL 2343,11102,1,6718000,5,7,Linea recta,0,1343600.0
+AF012,Computador DELL 2343,11103,1,6718000,5,7,Linea recta,0,1343600.0
+AF012,Computador DELL 2343,11104,1,6718000,5,3,Reduccion de saldos,1007700,6717999.315744571
+AF013,Computador DELL 1244,10901,2,1428000,5,7,Linea recta,0,285600.0
+AF014,Computador HP 84H0T,10501,1,1320000,5,7,Linea recta,0,264000.0
+AF014,Computador HP 84H0T,10702,1,1320000,5,7,Linea recta,0,264000.0
+AF016,Computador ACER 785tg,11103,2,1550000,5,7,Linea recta,0,310000.0
+AF016,Computador ACER 785tg,11102,3,1550000,5,7,Linea recta,0,310000.0
+AF017,ERP,Indirecto,1,450000000,10,10,Linea recta,0,45000000.0
+AF018,Proyector Benq Tk800m 4k,Indirecto,1,13400000,10,15,Linea recta,0,1340000.0
+AF019,Calentadora de Empaque,10201,3,5700000,10,15,Linea recta,0,570000.0

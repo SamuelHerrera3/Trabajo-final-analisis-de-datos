@@ -68,7 +68,7 @@ for nombre, ruta in rutas.items():
     #Se cambian los espacios vacios por string vacios para mejor manejo
     for col in tabla.select_dtypes(include='object'):
         tabla[col] = tabla[col].apply(
-            lambda x: eliminar_tildes(str(x)).replace('-', ' ') if isinstance(x, str) else x)
+            lambda x: eliminar_tildes(str(x)).replace('-', '0') if isinstance(x, str) else x)
         tabla[col] = tabla[col].apply(lambda x: convertir_valor(x))
     
     #Se eliminan las filas vacias, se setea cada tipo de dato segun corresponda

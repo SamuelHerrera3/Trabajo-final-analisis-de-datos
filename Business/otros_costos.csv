@@ -1,0 +1,9 @@
+CodRecurso,Recurso,BaseDeActividad,Costos,Gastos
+AF002,Depreciacion Edificio,Area,6893.4,4060.8
+AF003,Depreciacion Vehiculos,ValorActivos,918556000.0,680887000.0
+AF004,Depreciacion Vehiculos,ValorActivos,918556000.0,680887000.0
+AF017,Depreciacion ERP,ValorActivos,918556000.0,680887000.0
+AF018,Depreciacion Proyector,Personas,59.0,19.471153846153847
+OI001,Acueducto,PromedioConsumoAguaEnM3,18396.0,13787.46
+OI002,Energia,PromedioConsumoEnergiaEnKW/h,17677.41,13786.943400000002
+OI003,Internet,Personas,59.0,19.471153846153847
