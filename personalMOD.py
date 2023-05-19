@@ -11,7 +11,7 @@ empleados = pd.read_csv('./carpetaAux/BDEmpleados.csv')
 PrestamosHoras = pd.read_csv('./carpetaAux/PrestamosHoras.csv')
 
 #Se retiran los puntos del dataFrame
-empleados['Salario'] = empleados['Salario'].str.replace('.', '')
+empleados['Salario'] = empleados['Salario']
 #Se convierten los salarios a float para un mejor tratamiento a la hora del calculo
 empleados['Salario'] = empleados['Salario'].astype(float)
 #Se combierten los datos a tipo numerico 
@@ -49,7 +49,7 @@ empleados.to_csv( ruta_datos_procesados + 'empleados.csv', index=False)
 print('-----------------------------')
 
 
-PrestamosHoras['Horas'] = PrestamosHoras['Horas'].str.replace(',', '').astype(float)
+PrestamosHoras['Horas'] = PrestamosHoras['Horas'].astype(float)
 
 nuevo_dataframe = empleados.groupby(['Cargo','CodDependencia'])['Salario Total'].sum().reset_index(name='TotalSalarios')
 
@@ -98,7 +98,7 @@ nuevo_dataframe['Salario Costo'] = datos_filtrados['TotalSalarios']
 
 condicion = (nuevo_dataframe['Salario Costo'].notna()) & (nuevo_dataframe['Salario Costo'] != 0)
 
-nuevo_dataframe.loc[condicion, 'Salario Costo'] = suma_total_salarios -nuevo_dataframe['Salario Gasto']
+nuevo_dataframe.loc[condicion, 'Salario Costo'] = suma_total_salarios 
 
 nuevo_dataframe = nuevo_dataframe.drop(['DependenciaDestino'], axis=1)
 
