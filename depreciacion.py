@@ -6,6 +6,7 @@ ruta_datos_procesados = './Business/'
 actFijos = pd.read_csv('./Cleansed/ActFijos.csv')
 tabla_depreciacion = actFijos[['Código', 'Referencia', 'Ubicación', 'Cantidad', 'ValorEnLibrosUnitario', 'VidaÚtil', 'VidaEconómica', 'MétodoDepreciación', 'ValorSalvamento']]
 
+# funcion para calcular la depreciacion basado en el metodo especificado
 def calcular_depreciacion(row):
     if row['MétodoDepreciación'] == 'Linea recta':
         return row['ValorEnLibrosUnitario'] / row['VidaÚtil'];

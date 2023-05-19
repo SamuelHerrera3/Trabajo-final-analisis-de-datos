@@ -34,6 +34,7 @@ def eliminar_tildes(texto):
     texto = re.sub('[Ñ]', 'N', texto)
     return texto
 
+# Funcion para manejar numeros
 def convertir_valor(valor):
     if isinstance(valor, float):
         valor = str(valor)
@@ -54,6 +55,7 @@ def convertir_valor(valor):
         return valor
     return valor
 
+# Se recorre cada archivo para aplicar filtros de limpieza
 for nombre, ruta in rutas.items():
     archivoCsv =  ruta
     print(archivoCsv)
