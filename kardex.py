@@ -4,8 +4,8 @@ import numpy as np
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
 ruta_datos_procesados = './Business/'
 
-inventario = pd.read_csv('./carpetaAux/InventariosIniciales.csv', usecols=['Referencia','Cantidades','CostoUnit' ])
-almacen = pd.read_csv('./carpetaAux/MvtoAlmacénV2.csv', usecols=['Fecha', 'Referencia', 'Descripción', 'Tipo'])
+inventario = pd.read_csv('./Cleansed/InventariosIniciales.csv', usecols=['Referencia','Cantidades','CostoUnit' ])
+almacen = pd.read_csv('./Cleansed/MvtoAlmacénV2.csv', usecols=['Fecha', 'Referencia', 'Descripción', 'Tipo'])
 aux = pd.merge(inventario, almacen, on='Referencia', how='left')
 tabla = aux.reindex(columns=['Fecha', 'Referencia', 'Descripción', 'Cantidades', 'CostoUnit', 'Tipo'])
 
@@ -44,7 +44,7 @@ def calcular_costo_salida(elemento, kardex):
     # Devolver el costo promedio ponderado
     return costo_promedio_ponderado
 
-inventarioAux = pd.read_csv('./carpetaAux/InventariosIniciales.csv', usecols=['Referencia','Descripción', 'Cantidades','CostoUnit'])
+inventarioAux = pd.read_csv('./Cleansed/InventariosIniciales.csv', usecols=['Referencia','Descripción', 'Cantidades','CostoUnit'])
 
 kardex_full = inventarioAux.copy()
 arr = []

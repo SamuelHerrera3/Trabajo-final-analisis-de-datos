@@ -4,8 +4,8 @@ import numpy as np
 RAIZ = "C:/Dev/test/Trabajo-final-analisis-de-datos"
 ruta_datos_procesados = "./Business/"
 
-baseActividad = pd.read_csv("./carpetaAux/BasesDeActividad.csv")
-infoEstadistica = pd.read_csv("./carpetaAux/InfoEstadísticaEmpresa.csv")
+baseActividad = pd.read_csv("./Cleansed/BasesDeActividad.csv")
+infoEstadistica = pd.read_csv("./Cleansed/InfoEstadísticaEmpresa.csv")
 
 otros_costos = baseActividad.copy()
 

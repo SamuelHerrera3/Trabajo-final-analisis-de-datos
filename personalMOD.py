@@ -4,11 +4,11 @@ import numpy as np
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
 ruta_datos_procesados = './Business/'
 
-empleados_salario = pd.read_csv('./carpetaAux/BDEmpleados.csv')
+empleados_salario = pd.read_csv('./Cleansed/BDEmpleados.csv')
 
-empleados = pd.read_csv('./carpetaAux/BDEmpleados.csv')
+empleados = pd.read_csv('./Cleansed/BDEmpleados.csv')
 
-PrestamosHoras = pd.read_csv('./carpetaAux/PrestamosHoras.csv')
+PrestamosHoras = pd.read_csv('./Cleansed/PrestamosHoras.csv')
 
 #Se retiran los puntos del dataFrame
 empleados['Salario'] = empleados['Salario']

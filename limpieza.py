@@ -6,7 +6,6 @@ import numpy as np
 #se setean las rutas
 RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
 RutaDatosLimpios = './Cleansed/'
-RutaDatosAux = './carpetaAux/'
 rutas = {
         'ActFijos': './Landing/ActFijos.csv',
         'BasesDeActividad': './Landing/BasesDeActividad.csv',
@@ -76,6 +75,6 @@ for nombre, ruta in rutas.items():
     tabla = tabla.convert_dtypes()
 
     archivoCSV = nombre + '.csv'
-    tabla.to_csv( RutaDatosAux + archivoCSV, index=False)
+    tabla.to_csv(RutaDatosLimpios + archivoCSV, index=False)
     print(tabla)
     print('-----------------')

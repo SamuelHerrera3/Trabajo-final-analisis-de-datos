@@ -4,10 +4,10 @@ RAIZ = 'C:/Dev/test/Trabajo-final-analisis-de-datos'
 ruta_datos_procesados = './Business/'
 
 # Leemos el archivo csv limpio MvtoAlmacenV2 para trabajar con el
-mvtos = pd.read_csv('./carpetaAux/MvtoAlmacénV2.csv')
+mvtos = pd.read_csv('./Cleansed/MvtoAlmacénV2.csv')
 
 # Leemos el archivo de precios
-precios = pd.read_csv('./carpetaAux/Precios.csv')
+precios = pd.read_csv('./Cleansed/Precios.csv')
 
 # Filtramos por referencias que empiezan con la letra 'P'
 filtro_referencia = mvtos[mvtos['Referencia'].str.startswith('P')]
