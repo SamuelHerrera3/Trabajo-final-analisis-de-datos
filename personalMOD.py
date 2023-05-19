@@ -102,6 +102,7 @@ nuevo_dataframe.loc[condicion, 'Salario Costo'] = suma_total_salarios
 
 nuevo_dataframe = nuevo_dataframe.drop(['DependenciaDestino'], axis=1)
 
+nuevo_dataframe = nuevo_dataframe.fillna(0)
 print(nuevo_dataframe)
 
 nuevo_dataframe.to_csv( ruta_datos_procesados + 'SalarioGasto.csv', index=False)

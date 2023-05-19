@@ -25,6 +25,9 @@ def calcular_costo_salida(elemento, kardex):
     # Se calcula el costo total de las entradas(punto 4)
     costo_total_entradas = (entradas['Cantidades'] * entradas['CostoUnit']).sum()
 
+    
+    costo_total_entradas = (entradas['Cantidades'] * entradas['CostoUnit']).sum()
+
     # Calcular la cantidad total de salidas
     cantidad_total_salidas = salidas['Cantidades'].sum()
 
@@ -36,7 +39,7 @@ def calcular_costo_salida(elemento, kardex):
         return "No hay elementos disponibles"
     
     # Calcular el costo promedio ponderado dividiendo el costo total de entradas por la cantidad total de entradas
-    costo_promedio_ponderado = costo_total_entradas / cantidad_total_entradas
+    costo_promedio_ponderado = cantidad_total_salidas / cantidad_total_entradas
 
     if np.isnan(costo_promedio_ponderado):
         return "No hay elementos disponibles"
